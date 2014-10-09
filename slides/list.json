@@ -12,5 +12,12 @@
     "update-user-model.md",
     "generate-default-controller-routes.md",
     "dump-composers-auto-load.md",
-    "test-it-out.md"
+    "test-it-out.md",
+    "introducting-permissions.md",
+    "entrust-your-users.md",
+    "roles-v-permissions.md",
+    "installing-entrust.md",
+    "create-role-and-permission-models.md",
+    "create-role-and-permission-models-2.md",
+    "update-the-user-model.md"
 ]
