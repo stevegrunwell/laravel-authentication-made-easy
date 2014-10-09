@@ -1,0 +1,7 @@
+{
+  "generator-reveal": {
+    "presentationTitle": "Laravel Authentication and Permissions Made Easy",
+    "packageVersion": "0.1.0",
+    "useSass": true
+  }
+}

@@ -1,0 +1,16 @@
+[
+    "index.md",
+    "who-am-i.md",
+    "lets-talk-login-pages.md",
+    "enter-confide.md",
+    "installing-confide.md",
+    "installing-confide-2.md",
+    "register-confide-in-your-composerjson.md",
+    "add-confide-to-your-providers-and-aliases-arrays.md",
+    "adjust-relevant-config-in-authphp-and-mailphp.md",
+    "generate-migration.md",
+    "update-user-model.md",
+    "generate-default-controller-routes.md",
+    "dump-composers-auto-load.md",
+    "test-it-out.md"
+]
