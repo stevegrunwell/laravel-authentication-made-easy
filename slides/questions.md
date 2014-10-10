@@ -9,4 +9,4 @@
 [github.com/Zizaco/entrust](https://github.com/Zizaco/entrust)</p>
 
 <p class="title">Slides:<br>
-[GitHub slide URL](#)</p>
+[stevegrunwell.github.io/laravel-authentication-made-easy](http://stevegrunwell.github.io/laravel-authentication-made-easy)</p>
