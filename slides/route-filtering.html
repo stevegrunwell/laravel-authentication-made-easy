@@ -1,0 +1,26 @@
+<section>
+<h2>Route filtering</h2>
+
+<pre><code class="php">// Restrict the Master Builders section
+Entrust::routeNeedsRole('master-builders/*', 'Master Builder');
+
+// Restrict a route to users with a given permission
+Entrust::routeNeedsPermission('assembly-line', 'assemble_blocks');
+
+// Only let users who can assemble_blocks AND be_evil in
+Entrust::routeNeedsPermission(
+  'president-business-tower/*',
+  ['assemble_blocks', 'be_evil']
+);</code></pre>
+</section>
+
+<section>
+<h2>Redirect unauthorized users</h2>
+<p>Instead of just throwing a 403, you can redirect the users:</p>
+<pre><code class="php">// Only let users who can assemble_blocks AND be_evil in
+Entrust::routeNeedsPermission(
+  'president-business-tower/*',
+  ['assemble_blocks', 'be_evil'],
+  Redirect::to('real-world') // any response object works here
+);</code></pre>
+</section>

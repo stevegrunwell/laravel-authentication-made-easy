@@ -1,0 +1,70 @@
+<section>
+<h2>Permission seeder</h2>
+
+<pre><code class="php">class PermissionSeeder extends Seeder
+{
+  // Track all the permissions you use in your app...
+  $permissions = [
+    'assemble_blocks' => 'Assemble blocks',
+    'dream_big' => 'Dream BIG!'
+  ];
+
+  // And the permissions
+  $roles = [
+    'Average construction worker' => ['assemble_blocks'],
+    'Master Builder' => ['assemble_blocks', 'dream_big']
+  ];
+
+  ...
+
+}</code></pre>
+</section>
+
+<section>
+<h2>Permission seeder</h2>
+
+<pre><code class="php">class PermissionSeeder extends Seeder
+{
+  ...
+
+  // Create any new permissions and store their IDs for later
+  $permission_ids = Permission::lists('id', 'slug');
+  foreach ($permissions as $slug => $name)
+  {
+    if (! in_array($slug, $permission_ids))
+    {
+      $perm = new Permission;
+      $permission->name = $slug;
+      $permission->display_name = $name;
+      $permission->save();
+      $permission_ids[$slug] = $permission->id;
+    }
+  }
+
+  ...
+}</code></pre>
+</section>
+
+<section>
+<h2>Permission seeder</h2>
+
+<pre><code class="php">class PermissionSeeder extends Seeder
+{
+  ...
+
+  // Attach permissions to roles and create roles that don't exist yet
+  foreach ($roles as $name => $perms)
+  {
+    $role_permissions = array_intersect_key($perms, $permission_ids);
+    $role = Role::where('name', '=', $name)->first();
+    if (! $role)
+    {
+      $role = new Role
+      $role->name = $name;
+      $role->save();
+    }
+
+    $role->perms()->sync($role_permissions);
+  }
+}</code></pre>
+</section>
