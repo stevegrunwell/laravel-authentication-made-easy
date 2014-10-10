@@ -1,0 +1,29 @@
+<section>
+<h2>Checking permissions</h2>
+
+<pre><code class="php">// Check Roles...
+$user->hasRole('Average contruction worker'); // false
+$user->hasRole('Master Builder');             // true
+
+// ...or Permissions
+$user->can('assemble_blocks');  // true
+$user->can('build_spaceship');  // false</code></pre>
+</section>
+
+<section>
+<h2>Check both with ability()</h2>
+
+<pre><code class="php">// Checks if the user has *any* of these
+$user->ability(
+  ['Master Builder', 'Micro-manager'],  // Roles
+  ['assemble_blocks','dream_big']       // Permissions
+);</code></pre>
+
+<pre class="fragment"><code class="php">// Use the third argument to check for *all*
+// the specified roles + permissions
+$user->ability(
+  ['Master Builder', 'Micro-manager'],
+  ['assemble_blocks','dream_big'],
+  ['validate_all' => true]
+);</code></pre>
+</section>

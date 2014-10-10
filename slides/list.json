@@ -19,5 +19,16 @@
     "installing-entrust.md",
     "create-role-and-permission-models.md",
     "create-role-and-permission-models-2.md",
-    "update-the-user-model.md"
+    "update-the-user-model.md",
+    "populating-permissions.md",
+    "configuring-packages.md",
+    "putting-them-to-work.md",
+    "checking-permissions.html",
+    "route-filtering.html",
+    "seeding-permissions.md",
+    "permission-seeder.html",
+    "additional-tips.md",
+    "check-for-permissions-instead-of-roles.md",
+    "role-is-just-another-model.html",
+    "questions.md"
 ]
