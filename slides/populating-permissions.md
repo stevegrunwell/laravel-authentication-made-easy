@@ -65,6 +65,8 @@ $user->roles()->attach($master_builder->id);
 
 // attachRole() can take a Role object, array, or ID
 $user->attachRole($master_builder);</code></pre>
+
+<p class="fragment title"><em>Remember: a user can have many roles!</em></p>
 </section>
 
 <section>
