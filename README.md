@@ -7,3 +7,5 @@ D.R.Y., or "Don't Repeat Yourself" is a cornerstone of modern application develo
 In this developer session, attendees will learn how to implement the highly-configurable Confide authentication solution in a fresh Laravel app, while using Entrust to architect a robust role- and capability-based permission system. The talk will cover installation, configuration, and usage of both packages as well as strategies for handling complicated permission requirements.
 
 Now, stop repeating yourself and focus on building what makes your application unique!
+
+[View presentation](http://stevegrunwell.github.io/laravel-authentication-made-easy)
