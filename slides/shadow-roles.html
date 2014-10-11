@@ -1,16 +1,8 @@
 <section>
-  <h2>Role is just another model</h2>
+  <h2>"The Shadow Role"</h2>
 
   <ul>
-    <li>If you need to, you can totally build <abbr title="Create Read Update Delete">CRUD</abbr> interfaces for managing roles</li>
-    <li>Useful when building CMS-type apps that require flexible permissions</li>
-  </ul>
-</section>
-
-<section>
-  <h2>Example: "The Shadow Role"</h2>
-
-  <ul>
+    <li>Nice trick for apps that need fine-grained control over access</li>
     <li>Permissions populated via seeder</li>
     <li>CRUD interfaces to manage primary roles</li>
     <li>A hidden, non-public role, unique to each user, automatically created during <code>UsersController@store</code></li>

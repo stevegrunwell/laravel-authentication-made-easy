@@ -5,3 +5,4 @@
   $ php artisan config:publish zizaco/confide
   $ php artisan config:publish zizaco/entrust
   ```
+* Model + table names, views, email notification settings, and more!

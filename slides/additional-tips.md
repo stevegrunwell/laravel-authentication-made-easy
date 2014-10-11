@@ -1,1 +1,1 @@
-##  Additional tips
+##  Additional tips + advice
