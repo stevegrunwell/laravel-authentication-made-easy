@@ -32,5 +32,6 @@
     "check-for-permissions-instead-of-roles.md",
     "role-is-just-another-model.md",
     "shadow-roles.html",
+    "spiffy-authentication.md",
     "questions.md"
 ]
